@@ -1,5 +1,6 @@
 import pygame 
 import random
+import pkg_resources.py2_warn
 
 pygame.init()
 
@@ -30,6 +31,7 @@ carImg = pygame.image.load("racecar.png")
 enemy_car = pygame.image.load("enemy_car.png")
 
 carIcon = pygame.image.load("caricon.png")
+
 
 pygame.display.set_icon(carIcon)
 
