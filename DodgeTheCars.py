@@ -1,6 +1,5 @@
 import pygame 
 import random
-import pkg_resources.py2_warn
 
 pygame.init()
 
