@@ -25,7 +25,11 @@ gameDisplay = pygame.display.set_mode((display_width, display_height))
 pygame.display.set_caption("DodgeTheCars!")
 clock = pygame.time.Clock()
 
-carImg = pygame.image.load("racecar.png")
+carImg1 = pygame.image.load("racecar1.png")
+carImg2 = pygame.image.load("racecar2.png")
+carImg3 = pygame.image.load("racecar3.png")
+
+cars = random.choice([carImg1, carImg2, carImg3])
 
 enemy_car = pygame.image.load("enemy_car.png")
 
@@ -48,7 +52,7 @@ def enemyCar(enemyx, enemyy):
 
 
 def car(x,y):
-    gameDisplay.blit(carImg,(x,y))
+    gameDisplay.blit(cars,(x,y))
 
 
 def text_objects(text, font):
